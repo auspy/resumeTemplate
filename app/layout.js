@@ -1,7 +1,18 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Poppins, Bebas_Neue } from "next/font/google";
+import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--poppins",
+});
+const bebas_neue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--bebas_neue",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${poppins.variable} select-none scroll-smooth ${bebas_neue.variable}`}
+    >
+      <body className={poppins.className}>{children}</body>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charSet="utf-8"
+      ></script>
     </html>
   );
 }
