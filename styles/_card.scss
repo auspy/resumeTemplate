@@ -1,0 +1,159 @@
+.card,
+.card2 {
+  border: 1px solid var(--border, #132341);
+  background: var(--cardBg, #081121);
+  box-shadow: 0px 4px 5.3px 0px rgba(20, 26, 37, 0.2) inset,
+    0px -4px 3px 0px rgba(6, 12, 24, 0.1) inset;
+}
+.cardCommon {
+  @apply border-border border p-4 rounded-[10px] w100;
+}
+
+.card2 {
+  background: var(--cardBg2, #020b1c);
+  border-radius: 20px;
+}
+.card3 {
+  @apply card card2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardCommon {
+    padding: 15px;
+  }
+  .card3 {
+    padding: 15px;
+  }
+}
+.heroCard {
+  border-bottom: 1px solid var(--border, #132341);
+
+  // background: url(<path-to-image>), lightgray 50% / cover no-repeat, #000613;
+
+  /* blurBg */
+  backdrop-filter: blur(41.04999923706055px);
+}
+
+.cardGrad,
+.cardGradHeader {
+  border-radius: 10px;
+  border: 1px solid #132541;
+  background: var(
+    --gradBg,
+    linear-gradient(
+      180deg,
+      rgba(0, 56, 165, 0.1) 0.28%,
+      rgba(131, 169, 243, 0.02) 72.09%,
+      rgba(131, 169, 243, 0) 111.18%
+    )
+  );
+
+  /* blurBg */
+  backdrop-filter: blur(14px);
+}
+
+.cardGradHeader {
+  background: var(
+    linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%),
+    linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%)
+  );
+}
+#filterMenu {
+  display: none;
+  max-width: 30%;
+  position: sticky;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  border-top-width: 0;
+  // height: 100;
+  border-radius: 0;
+  padding: 30px;
+  padding-top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  z-index: 100;
+}
+@media screen and (max-width: 1024px) {
+  #filterMenu {
+    max-width: 100%;
+    padding: 20px;
+    bottom: 0;
+    height: 50%;
+    padding-top: 0;
+    top: unset;
+    left: unset;
+    position: fixed;
+    backdrop-filter: blur(17px);
+    // padding-top: 30px;
+    @apply scrollbar-x;
+  }
+}
+@media screen and (min-width: 768px) {
+  #filterMenu {
+    @apply scrollbar-x;
+  }
+}
+
+.cardHighlight {
+  border-radius: 10px;
+  border: 1px solid var(--border, #132341);
+  background: radial-gradient(
+      80.09% 69.44% at 50% 0%,
+      rgba(125, 168, 255, 0.2) 0%,
+      rgba(128, 170, 255, 0) 100%
+    ),
+    radial-gradient(
+      31.92% 71.68% at 50% 0.45%,
+      rgba(213, 227, 255, 0.1) 0%,
+      rgba(86, 115, 172, 0) 100%
+    ),
+    radial-gradient(
+      40.15% 99.55% at 50% 0.45%,
+      rgba(86, 115, 172, 0.1) 0%,
+      rgba(86, 115, 172, 0) 100%
+    );
+  padding: 20px;
+}
+a.cardGrad:hover {
+  background: radial-gradient(
+      80.09% 69.44% at 50% 0%,
+      rgba(125, 168, 255, 0.2) 0%,
+      rgba(128, 170, 255, 0) 100%
+    ),
+    radial-gradient(
+      31.92% 71.68% at 50% 0.45%,
+      rgba(213, 227, 255, 0.1) 0%,
+      rgba(86, 115, 172, 0) 100%
+    ),
+    radial-gradient(
+      40.15% 99.55% at 50% 0.45%,
+      rgba(86, 115, 172, 0.1) 0%,
+      rgba(86, 115, 172, 0) 100%
+    );
+}
+.cardHeader {
+  border-radius: 20px;
+  box-shadow: 0px 4px 5.3px 0px rgba(20, 26, 37, 0.2) inset,
+    0px -4px 3px 0px rgb(6, 12, 24, 0.1) inset;
+  background: rgba(8, 17, 33, 0.12);
+  border: 1px solid var(--border, #132341);
+  backdrop-filter: blur(27.100000381469727px);
+}
+
+a.navItem {
+  margin: 1px;
+}
+a.navItem:hover {
+  @apply cardGrad;
+  margin: 0;
+  border-radius: 20px;
+  transition: border 0.5s ease, margin 0.5s ease;
+}
