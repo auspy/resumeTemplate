@@ -27,50 +27,55 @@ const ResumeCard = ({ name, links, salutation, intro, story }) => {
         {/* ABOUT ME */}
         <Section heading={"Who am I?"}>{intro}</Section>
         {/* MY STORY */}
-        <Section heading={"My Story"}>{story}</Section>
+        <Section heading={"Projects I am proud of"}>{story}</Section>
         {/* REASON TO JOIN */}
         <Section heading={"Why I want to join your team?"}>
           <ul>
-            <li>
-              I like the idea of working in a small team where I can have a big
-              impact.
-            </li>
             <li>
               I am looking for a place where I can learn and grow as a
               developer.
             </li>
             <li>
+              I enjoy using tailwind and find it very intuitive and easy to use.
+              To be able to help other developers use it better would be a dream
+              come true.
+            </li>
+            <li>
               I may not be the best developer out there, but I am willing to
-              learn and improve everyday.
+              learn and improve everyday. My love for builing things is what
+              drives me everyday to learn new things.
             </li>
           </ul>
         </Section>
         {/* WHAT FUTURE HOLDS */}
-        <Section heading={"What future holds"}>
+        <Section heading={"What we can work on in future"}>
+          <blockquote>
+            Along with all the amazing things you are working on, I have a few
+            ideas that we can work on together.
+          </blockquote>
           <ul>
-            <blockquote>We can build a lot of things together.</blockquote>
             <li>
-              For starters, I would love to work on apis and backend services.
+              I have worked as a UI/UX freelance designer in the past and can
+              help in design and user experience.
+              <ul className="ml-5 mt-1">
+                <li>
+                  Last project i worked on:
+                  <Link href={"https://oni.exchange"}>
+                    {" "}
+                    ONI Exchange - A Defi platform
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
-              I am also interested in learning about devops and deployment
-              strategies.
+              Along with creating a tool for designing color palettes we can
+              create a web page to showcase all the components and make it super
+              easy to change the theme.
             </li>
             <li>
-              We can implement A/B testing and other growth hacking strategies
-              on frontend.
-            </li>
-            <li>
-              I would also love to work on some machine learning models and
-              integrate them in the product.
-            </li>
-            <li>
-              Since I am a full stack developer, I can also help in frontend and
-              design.
-            </li>
-            <li>
-              I have worked as a UI/UX designer in the past and can help in
-              design and user experience.
+              <b>I love to learn new tools.</b> After effects has been on my
+              todolist for a long time. This could be a great opportunity to
+              learn it.
             </li>
             <li>
               Most important thing, I am still in college and have no experience
@@ -104,6 +109,17 @@ const ResumeCard = ({ name, links, salutation, intro, story }) => {
         <Section heading={"Other projects and internships"}>
           <ul>
             <li>
+              <Link href={"https://thenamedrop.vercel.app"}>
+                EthIndia 2023: NameDrop - Better Way To Connect With People an
+                Event
+              </Link>
+            </li>
+            <li>
+              <Link href={"https://thetreasurehunt.vercel.app"}>
+                Treasure Hunt Game based on Blockchain
+              </Link>
+            </li>
+            <li>
               <b>Interconti Projects</b> : I worked on contract basis for
               Interconti Projects. Built and optimised 2 websites using
               wordpress.
@@ -135,13 +151,6 @@ const ResumeCard = ({ name, links, salutation, intro, story }) => {
               <Link href={"https://github.com/auspy/srmrepo"}>SRM Repo:</Link> A
               repository for research papers pulished by SRM students and
               faculty.{" "}
-            </li>
-            <li>
-              <Link href={"https://devclans.com/kshetezvinayak/devlinks"}>
-                Devclans product : Devlinks
-              </Link>{" "}
-              - One of the themes we provide for the platform which allows
-              developers to share important links and resources.
             </li>
           </ul>
         </Section>

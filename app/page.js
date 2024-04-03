@@ -2,7 +2,6 @@ import LightRays from "@/components/LightRays";
 import MyStory from "@/components/MyStory";
 import ResumeCard from "@/components/ResumeCard";
 import ShootingStars from "@/components/ShootingStars";
-import Link from "next/link";
 
 export default function Home() {
   const dummyResumeProps = {
@@ -18,22 +17,30 @@ export default function Home() {
         href: "https://x.com/kshetez-vinayak/",
       },
     ],
-    salutation: "Hi, Srijan And John!",
+    salutation: "Hi Adam and Steve!",
     intro: (
       <p>
-        I am <b>Kshetez Vinayak</b>, a developer living in <b>Haryana</b>, India
-        who has been building projects for last 2 years.
+        I am <b>Kshetez Vinayak</b>, a 22 y/o developer living in <b>Haryana</b>
+        , India who has been building projects for last 2 years.
         <br />
-        <br />I am currently a <b>4th year BTech student in SRM</b>, and not
-        actively searching for a job. However when i saw this job posting a had
-        to apply since this sounds like a dream job and once in a lifetime
-        opportunity. I hear you, I know what you think! Geez, he doesn't even
-        have any real world experience! But, since you are here, maybe you can
-        give me a chance to prove myself.
+        <br />I am currently a <b>4th year BTech student in SRM</b>, and
+        actively searching for a SDE role. When i saw this job posting a had to
+        apply since this sounds like a dream job and once in a lifetime
+        opportunity. Yes, I understand that this is outside the timezone you
+        want and I am not even experienced.
         <br />
         <br />
-        That being said lets go to my story and why i think we are a great fit
-        for each other.
+        And still I want to try to convince you that I am a great fit for a role
+        in your company.
+        <br />
+        <br />
+        The time difference is not that big. I am willing to work at the time
+        schedule tailwind labs operates in. And about my experience, I have been
+        working on projects for the last 2 years and I have learned a lot in
+        this time.
+        <br />
+        <br />I would really appreciate an opportunity to work with you and
+        learn from you. I am willing to learn and improve everyday.
       </p>
     ),
     story: <MyStory />,

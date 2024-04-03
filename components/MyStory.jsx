@@ -14,30 +14,16 @@ const MyStory = () => {
         .
       </p>
       <p>So lets get started.</p>
-      <p>
-        I am a <b>22 y/o developer👨‍💻</b> living with my nuclear family in
-        Haryana, India and here is my story.
-      </p>
-      <h3>Direct Dive : Backend in Nodejs , MySQL for DB and AWS to deploy</h3>
+      <h3>My First Project Ever: Studivia</h3>
       <blockquote className="mb-4">
-        <h4>Your requirements:</h4>
-        <ul>
-          <li>
-            A server side programming languages, preferably Nodejs, Deno or
-            python in your arsenal.
-          </li>
-          <li>
-            An extremely good understanding of relational databases (MySQL,
-            PostgresSQL) or NoSQL (Redis).
-          </li>
-        </ul>
+        Before building this project, I had no experience in building websites.
+        All I knew was that we need HTML, CSS and JS to build a website.
       </blockquote>
       <p>
-        <b>In 2022, from not knowing anything about building</b> a website
-        (except that we need HTML, CSS and JS to do so), to building a full
-        fleged website and even deploying it within 2-3 months I fell in love
-        with development. This was first time I was enjoying something other
-        than playing games.
+        <b>In 2022, from not knowing anything about building</b>, to building a
+        full fleged website and even deploying it within 2-3 months I fell in
+        love with development. This was first time I was enjoying something
+        other than playing games.
       </p>
       I learnt about:
       <ol type="">
@@ -62,13 +48,16 @@ const MyStory = () => {
         <Link href={"https://github.com/auspy/studivia"}>Github</Link>
       </div>
       <h4 className="mb-4">Video showcasing working of project:</h4>
-      <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+      <div style={{ position: "relative", paddingBottom: "400px", height: 0 }}>
         <iframe
           src="https://www.loom.com/embed/ed5243e7af664e41aaa84cdd44c241d6?sid=670454aa-f5e5-4782-ac5a-0ee338d5e51d"
           frameBorder="0"
           allowFullScreen
           style={{
+            maxWidth: "600px",
             position: "absolute",
+            aspectRatio: "16/9",
+            maxHeight: "400px",
             top: 0,
             left: 0,
             width: "100%",
@@ -77,17 +66,13 @@ const MyStory = () => {
         ></iframe>
       </div>
       <h3>
-        First Production Deployment and Income : Learning new concepts and
-        debugging components
+        First Production Deployment and Income : Food Delivery App for College
       </h3>
       <blockquote className="mb-4">
         <h4>Your requirements:</h4>
         <ul>
-          <li>
-            You can articulate complicated technical concepts clearly and learn
-            coding languages if needed.
-          </li>
-          <li>Ability to get under the hood and debug/tune components.</li>
+          <li>You love to learn new tools.</li>
+          <li>You’re a self-starter.</li>
         </ul>
       </blockquote>
       <p>
@@ -152,34 +137,28 @@ const MyStory = () => {
           },
         ]}
       />
-      <h3>REST/GraphQL APIs + React + Next.js</h3>
+      <h3>Mastering React + Typescript + Tailwind CSS : Cllgnotes.com</h3>
       <blockquote className="mb-4">
         <h4>Your requirements:</h4>
-        <li>
-          Understanding of REST/GraphQL APIs, and relevant frameworks to build
-          them in the language of your choice.
-        </li>
-        <Image
-          src={"/fuzeHiring.png"}
-          alt="github progress"
-          width={400}
-          height={400}
-          className="w-full"
-        />
+        On the technology side, you’ll be a great fit if you have expertise in
+        these areas:
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Tailwind CSS</li>
       </blockquote>
       <p>
-        <b>In mid of 2023 I joined Harkirat Cohort</b> and decided to implement
-        many techs he was talking about. So for my <b>minor project</b>, I
-        decided to learn{" "}
+        <b>In mid of 2023 I joined Web Dev Cohort</b> and decided to implement
+        many techs I came to know about. So during my{" "}
+        <b>univiversity's minor project</b>, I decided to learn{" "}
         <b>
           Nextjs, GraphQl using Apollo, monorepo(turborepo), typescript,
-          MongoDB, zod and tailwind
+          MongoDB, zod and tailwind CSS
         </b>
         . A completely new tech stack for me.
       </p>
       <p>Few things I learnt:</p>
       <ul>
-        <li>Nextjs middleware</li>
+        <li>Nextjs concepts along with nextjs middleware</li>
         <li>
           GraphQL queries and mutations.{" "}
           <b>Using gql with server components.</b>
@@ -217,7 +196,7 @@ const MyStory = () => {
         </li>
       </ul>
       <h4>
-        An Algorithm which made searching through text in images possible:
+        Built an Algorithm which made searching through text in images possible:
       </h4>
       <p>
         My minor project is finding and exploring previous year university
@@ -261,13 +240,15 @@ const MyStory = () => {
         ]}
       />
       <h4 className="mb-4">Video showcasing working of project:</h4>
-      <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+      <div style={{ position: "relative", paddingBottom: "400px", height: 0 }}>
         <iframe
           src="https://www.loom.com/embed/1607587bec6840eda17960a07d552375?sid=23c2c405-ee0e-48d5-a9ba-b3dfb5873627"
           frameBorder="0"
           allowFullScreen
           style={{
             position: "absolute",
+            maxHeight: "400px",
+            maxWidth: "600px",
             top: 0,
             left: 0,
             width: "100%",
@@ -275,39 +256,12 @@ const MyStory = () => {
           }}
         ></iframe>
       </div>
-      <h3>Web 3 Experience</h3>
-      <div>
-        Since you are a blockchain based company, I would like to share my
-        experience in web3. I have participated in EthIndia 2023 and many web3
-        based hackathons. Here are few projects I built:
-        <ul className="mt-4">
-          <li>
-            <Link href={"https://thenamedrop.vercel.app"}>
-              EthIndia 2023: NameDrop - Better Way To Connect With People in
-              Event
-            </Link>
-          </li>
-          <li>
-            <Link href={"https://thetreasurehunt.vercel.app"}>
-              Treasure Hunt Game based on Blockchain
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <h3>Redis and Teamwork</h3>
-      <blockquote className="mb-4">
-        <h4>Your requirements:</h4>
-        <li>
-          An extremely good understanding of relational databases (MySQL,
-          PostgresSQL) or NoSQL (Redis).
-        </li>
-      </blockquote>
+      <h3>Practicing Teamwork : Devclans</h3>
       <p>
         In 2024, I decided to build a connection platform for developers. We
-        already had a means of marketing and testers i.e, students in Harkirat's
-        Cohort and he himself was willing to repost meaningful tweets. So I
-        decided to build a platform where developers can connect with each other
-        and share their projects.
+        already had a means of marketing and testers. So I decided to build a
+        platform where developers can connect with each other and share their
+        projects.
       </p>
       <p>
         I was the <b>lead developer and designer</b> in this project and managed
@@ -412,27 +366,12 @@ export async function POST(
         </details>
       </div>
       <Links links={[{ name: "Website", href: "https://devclans.com" }]} />
-      <h3>Planning to learn</h3>
-      <blockquote className="mb-4">
-        <h4>Your requirements:</h4>
-        <li>
-          Strong skill in documenting APIs to be used by businesses around the
-          world.
-        </li>
-        <li> Strongly practice writing unit and integration tests.</li>
-      </blockquote>
-      <p>
-        I have no experience in writing APIs and writing tests. I am ready to
-        learn them if I am given a chance.
-      </p>
       <h3>Soft skills</h3>
       <p>
-        I enjoy engaging in lengthy discussions about specific topics, where I
-        can freely discuss and even argue my opinions. However, I am also open
-        to changing and adapting my opinions based on new information. If I were
-        to name a superpower I possess, it would be my ability to listen
-        attentively. If i had to name a superpower which i have it would be
-        listening.
+        If i had to name a superpower which i have it would be listening. I
+        enjoy learning from other people and stand up for my own opinions. I am
+        a good team player and can work with anyone. I am also good at
+        explaining complex things in simple terms.
       </p>
       <hr />
       <p>
