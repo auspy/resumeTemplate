@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
 
@@ -16,8 +15,13 @@ const MyStory = () => {
       <p>So lets get started.</p>
       <h3>My First Project Ever: Studivia</h3>
       <blockquote className="mb-4">
-        Before building this project, I had no experience in building websites.
-        All I knew was that we need HTML, CSS and JS to build a website.
+        <h4>Your requirements:</h4>
+        <ul>
+          <li>
+            Solid understanding of JavaScript, HTML, and CSS, and their
+            application in web development.
+          </li>
+        </ul>
       </blockquote>
       <p>
         <b>In 2022, from not knowing anything about building</b>, to building a
@@ -34,7 +38,7 @@ const MyStory = () => {
           was called REST API back then.
         </li>
         <li>Sending data to and fetching data from backend</li>
-        <li>Google authentication using OAuth3.0</li>
+        <li>Google authentication using OAuth2.;</li>
         <li>Deploying both backend and database using AWS</li>
       </ol>
       <div>
@@ -65,11 +69,11 @@ const MyStory = () => {
           }}
         ></iframe>
       </div>
-      <h3>
+      {/* <h3>
         First Production Deployment and Income : Food Delivery App for College
       </h3>
       <blockquote className="mb-4">
-        <h4>Your requirements:</h4>
+        <h5>Your requirements:</h4>
         <ul>
           <li>You love to learn new tools.</li>
           <li>You’re a self-starter.</li>
@@ -136,19 +140,26 @@ const MyStory = () => {
             href: "https://play.google.com/store/apps/details?id=com.auspy.collegecanteen",
           },
         ]}
-      />
+      /> */}
       <h3>Mastering React + Typescript + Tailwind CSS : Cllgnotes.com</h3>
       <blockquote className="mb-4">
         <h4>Your requirements:</h4>
-        On the technology side, you’ll be a great fit if you have expertise in
-        these areas:
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Tailwind CSS</li>
+        <li>
+          Familiarity with the MERN stack (MongoDB, Express.js, React.js, and
+          Node.js), TypeScript, and their associated frameworks and libraries.
+        </li>
+        <li>
+          Experience in developing and integrating front-end and back-end
+          components using TypeScript.
+        </li>
+        <li>
+          Enthusiasm for learning new technologies and staying up-to-date with
+          industry trends.
+        </li>
       </blockquote>
       <p>
         <b>In mid of 2023 I joined Web Dev Cohort</b> and decided to implement
-        many techs I came to know about. So during my{" "}
+        many techs I came to know about. So while building my{" "}
         <b>univiversity's minor project</b>, I decided to learn{" "}
         <b>
           Nextjs, GraphQl using Apollo, monorepo(turborepo), typescript,
@@ -195,7 +206,7 @@ const MyStory = () => {
           </details>
         </li>
       </ul>
-      <h4>
+      {/* <h4>
         Built an Algorithm which made searching through text in images possible:
       </h4>
       <p>
@@ -228,7 +239,7 @@ const MyStory = () => {
         This made searching for papers very easy. Users can now filter paper by
         course, department, subject, subject code, year, semester, etc. and even
         search papers based on questions in the paper.
-      </p>
+      </p> */}
       <Links
         links={[
           { name: "Github", href: "https://github.com/auspy/cllgnotes" },
@@ -257,6 +268,18 @@ const MyStory = () => {
         ></iframe>
       </div>
       <h3>Practicing Teamwork : Devclans</h3>
+      <blockquote className="mb-4">
+        <h4>Your requirements:</h4>
+        <li>
+           Proficiency in version control systems, such as Git, and familiarity
+          with agile development methodologies.
+        </li>
+        <li>
+          Strong problem-solving skills and the ability to work collaboratively
+          in a team environment.
+        </li>
+        <li>Excellent communication and documentation skills.</li>
+      </blockquote>
       <p>
         In 2024, I decided to build a connection platform for developers. We
         already had a means of marketing and testers. So I decided to build a
