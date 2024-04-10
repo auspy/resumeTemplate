@@ -32,8 +32,8 @@ export default async function middleware(req) {
   }
 
   const path = `${url.pathname}`;
-  const tailwind = "kshetez_vinayak_tailwind_resume";
-  const sphereai = "kshetez_vinayak_sphereai_resume";
+  const tailwind = "kshetez-vinayak-tailwind-resume";
+  const sphereai = "kshetez-vinayak-sphereai-resume";
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN;
   // rewrites for app pages
   console.log("hostname", hostname);
