@@ -36,6 +36,7 @@ export default async function middleware(req) {
   const sphereai = "kshetez_vinayak_sphereai_resume";
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN;
   // rewrites for app pages
+  console.log("hostname", hostname);
   if (hostname == `${sphereai}.${rootDomain}`) {
     console.log("links subdomain");
     return NextResponse.rewrite(new URL(`/sphereai`, req.url));
