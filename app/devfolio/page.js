@@ -1,7 +1,7 @@
 import LightRays from "@/components/LightRays";
 import DevfolioStory from "@/components/DevfolioStory";
 import DevfolioResumeCard from "@/components/DevfolioResumeCard";
-import ShootingStars from "@/components/ShootingStars";
+// import ShootingStars from "@/components/ShootingStars";
 
 export default function Home() {
   const dummyResumeProps = {

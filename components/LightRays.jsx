@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { memo } from "react";
 
 const LightRays = ({ style, opacity = 0.3, className, imgClassName }) => {
   return (
@@ -25,4 +26,4 @@ const LightRays = ({ style, opacity = 0.3, className, imgClassName }) => {
   );
 };
 
-export default LightRays;
+export default memo(LightRays);

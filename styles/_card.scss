@@ -45,10 +45,11 @@
 }
 
 .cardGradHeader {
-  background: var(
-    linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%),
-    linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%)
-  );
+  background: var(--cardBg);
+  /* var( */
+    /* linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%), */
+    /* linear-gradient(180deg, rgba(0, 56, 165, 0.8) 50%) */
+  /* ); */
 }
 #filterMenu {
   display: none;
@@ -95,7 +96,8 @@
 .cardHighlight {
   border-radius: 10px;
   border: 1px solid var(--border, #132341);
-  background: radial-gradient(
+  background: var(--cardBg, #081121);
+  /* radial-gradient(
       80.09% 69.44% at 50% 0%,
       rgba(125, 168, 255, 0.2) 0%,
       rgba(128, 170, 255, 0) 100%
@@ -109,11 +111,12 @@
       40.15% 99.55% at 50% 0.45%,
       rgba(86, 115, 172, 0.1) 0%,
       rgba(86, 115, 172, 0) 100%
-    );
+    ); */
   padding: 20px;
 }
 a.cardGrad:hover {
-  background: radial-gradient(
+  background: var(--cardBg2)
+  /* radial-gradient(
       80.09% 69.44% at 50% 0%,
       rgba(125, 168, 255, 0.2) 0%,
       rgba(128, 170, 255, 0) 100%
@@ -127,7 +130,7 @@ a.cardGrad:hover {
       40.15% 99.55% at 50% 0.45%,
       rgba(86, 115, 172, 0.1) 0%,
       rgba(86, 115, 172, 0) 100%
-    );
+    ); */
 }
 .cardHeader {
   /* border-radius: 20px; */
@@ -135,7 +138,7 @@ a.cardGrad:hover {
     /* 0px -4px 3px 0px rgb(6, 12, 24, 0.1) inset; */
   background: rgba(8, 17, 33, 0.12);
   /* border: 1px solid var(--border, #132341); */
-  backdrop-filter: blur(27.100000381469727px);
+  backdrop-filter: blur(14px);
 }
 
 a.navItem {
