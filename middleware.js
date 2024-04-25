@@ -35,6 +35,8 @@ export default async function middleware(req) {
   const tailwind = "kshetez-vinayak-tailwind-resume";
   const sphereai = "kshetez-vinayak-sphereai-resume";
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN;
+  const mixrank = "kshetez-vinayak-mixrank-resume";
+  const devfolio = "kshetez-vinayak-devfolio-resume";
   // rewrites for app pages
   console.log("hostname", hostname);
   if (hostname == `${sphereai}.${rootDomain}`) {
@@ -43,6 +45,12 @@ export default async function middleware(req) {
   } else if (hostname == `${tailwind}.${rootDomain}`) {
     console.log("resume subdomain");
     return NextResponse.rewrite(new URL(`/tailwind`, req.url));
+  } else if (hostname == `${mixrank}.${rootDomain}`) {
+    console.log("resume subdomain");
+    return NextResponse.rewrite(new URL(`/mixrank`, req.url));
+  } else if (hostname == `${devfolio}.${rootDomain}`) {
+    console.log("resume subdomain");
+    return NextResponse.rewrite(new URL(`/devfolio`, req.url));
   }
   // else if (path.includes("/auth")) {
   //   console.log("redirecting to ", new URL(path, urlBase));
