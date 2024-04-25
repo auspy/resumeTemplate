@@ -40,17 +40,7 @@
 .cardGradHeader {
   border-radius: 10px;
   border: 1px solid #132541;
-  background: var(
-    --gradBg,
-    linear-gradient(
-      180deg,
-      rgba(0, 56, 165, 0.1) 0.28%,
-      rgba(131, 169, 243, 0.02) 72.09%,
-      rgba(131, 169, 243, 0) 111.18%
-    )
-  );
-
-  /* blurBg */
+  background: rgba(131, 169, 243, 0.02) 72.09%;  /* blurBg */
   backdrop-filter: blur(14px);
 }
 
@@ -140,11 +130,11 @@ a.cardGrad:hover {
     );
 }
 .cardHeader {
-  border-radius: 20px;
-  box-shadow: 0px 4px 5.3px 0px rgba(20, 26, 37, 0.2) inset,
-    0px -4px 3px 0px rgb(6, 12, 24, 0.1) inset;
+  /* border-radius: 20px; */
+  /* box-shadow: 0px 4px 5.3px 0px rgba(20, 26, 37, 0.2) inset, */
+    /* 0px -4px 3px 0px rgb(6, 12, 24, 0.1) inset; */
   background: rgba(8, 17, 33, 0.12);
-  border: 1px solid var(--border, #132341);
+  /* border: 1px solid var(--border, #132341); */
   backdrop-filter: blur(27.100000381469727px);
 }
 

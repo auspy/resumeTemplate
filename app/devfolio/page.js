@@ -37,8 +37,8 @@ export default function Home() {
   };
   return (
     <main className="h-screen w-screen fccc relative overflow-hidden">
-      <LightRays imgClassName="scale" opacity={0.8} style={{}} />
-      <ShootingStars />
+      <LightRays imgClassName=" scale-[1.2] " opacity={0.8} style={{}} />
+      {/* <ShootingStars /> */}
       <DevfolioResumeCard {...dummyResumeProps} />
     </main>
   );
